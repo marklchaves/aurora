@@ -34,11 +34,14 @@ nav {
     cursor: pointer;
 }
 
+
+/* Manual grid version mlc
 .navbar-brand {
     position: absolute;
     left: 5px;
     float: none;
 }
+*/
 
 .nav-link {
     margin-right: 1em !important;
@@ -69,6 +72,8 @@ ul {
     background-color: #007bff!important
 }
 
+
+/** Manual grid version mlc
 #navbarSupportedContent {
     width: 50%;
     display: grid;
@@ -79,6 +84,7 @@ ul {
 .navbar-nav {
     float: none !important;
 }
+*/
 
 
 /*header style*/
@@ -238,9 +244,12 @@ ul {
     padding: 1% 0;
 }
 
+
+/*
 .card-footer {
     text-align: center;
 }
+*/
 
 .team .des {
     background: #F97300;
@@ -294,7 +303,7 @@ footer {
 }
 
 
-/** Manual flex version
+/** Manual flex version mlc
 .footer--row {
     display: flex;
     align-items: flex-start;
