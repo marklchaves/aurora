@@ -293,8 +293,11 @@ footer {
     padding: 1% 0;
 }
 
+
+/** Manual flex version
 .footer--row {
     display: flex;
     align-items: flex-start;
     justify-content: space-evenly;
 }
+*/
