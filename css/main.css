@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 :root {
     --lite-bg-color: white;
+    --navbar-height: 50px;
 }
 
 body {
@@ -99,6 +100,7 @@ ul {
     background-size: cover;
     background-position: center;
     width: 100%;
+    margin-top: var(--navbar-height);
 }
 
 .overlay {
