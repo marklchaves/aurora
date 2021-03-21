@@ -2,6 +2,8 @@
 
 ## A single page website for learning Bootstrap 4
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/9c58f724-923b-4de0-a110-6314af5ab5e9/deploy-status)](https://app.netlify.com/sites/determined-golick-341803/deploys)
+
 ---
 
 ## Updated version
