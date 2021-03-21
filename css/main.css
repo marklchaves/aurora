@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
+:root {
+    --lite-bg-color: white;
+}
+
 body {
     padding: 0;
     margin: 0;
@@ -131,8 +135,8 @@ ul {
 }
 
 .about {
-    margin: 4em 0;
-    padding: 1em;
+    margin: 3em 0;
+    padding: 1em 0;
     position: relative;
 }
 
@@ -171,7 +175,8 @@ ul {
 /*Portfolio*/
 
 .portfolio {
-    margin: 4em 0;
+    margin: 3em 0;
+    padding: 1em 0;
     position: relative;
 }
 
@@ -226,7 +231,8 @@ ul {
 }
 
 .team {
-    margin: 4em 0;
+    margin: 3em 0;
+    padding-bottom: 1em;
     position: relative;
 }
 
@@ -244,13 +250,6 @@ ul {
     padding: 1% 0;
 }
 
-
-/*
-.card-footer {
-    text-align: center;
-}
-*/
-
 .team .des {
     background: #F97300;
     color: #fff;
@@ -258,18 +257,32 @@ ul {
     border-top-right-radius: 93%;
     transition: .3s ease-in-out;
     position: absolute;
-    width: 88%;
-    bottom: 24px;
+    width: 90%;
+    bottom: 6%;
+}
+
+@media screen and (max-width: 1024px) {
+    .team .des {
+        bottom: 0;
+    }
 }
 
 .team .item:hover .des {
     height: 100%;
     background: #f973007d;
     position: absolute;
-    width: 89%;
+    width: 100%;
     padding: 5em;
     top: 0;
     border-top-right-radius: 0;
+}
+
+
+/* Force justify to the center. mlc */
+
+form {
+    width: 75%;
+    margin: 0 auto;
 }
 
 .contact-form {
@@ -298,15 +311,35 @@ ul {
 }
 
 footer {
-    background-color: white;
+    background-color: var(--lite-bg-color);
     padding: 1% 0;
 }
 
 
-/** Manual flex version mlc
-.footer--row {
+/* Force justify to the center. mlc */
+
+.row--justify-center {
+    width: 75%;
+    margin: 0 auto;
+}
+
+
+/* Indent a list. */
+
+.ul--indent {
+    margin-left: 3%;
+}
+
+
+/** Manual flex version mlc */
+
+.row--flex-start {
     display: flex;
     align-items: flex-start;
     justify-content: space-evenly;
 }
-*/
+
+#portfolio,
+#team {
+    background-color: var(--lite-bg-color);
+}
