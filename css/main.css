@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 :root {
+    --mobile-first-font-size: 24px;
+    --default-font-size: 18px;
     --lite-bg-color: white;
     --navbar-height: 50px;
 }
@@ -24,7 +26,13 @@ a {
     font-family: "Raleway", Arial, Helvetica, sans-serif;
 }
 
+html,
+body {
+    font-size: var(--mobile-first-font-size);
+}
+
 nav {
+    padding: 1em;
     margin-bottom: 0 !important;
 }
 
@@ -67,6 +75,11 @@ nav {
 
 ul {
     list-style: none;
+}
+
+.navbar-nav>li>a {
+    line-height: 2;
+    /* Override Bootstrap mlc */
 }
 
 .bg-dark {
@@ -125,8 +138,7 @@ ul {
 
 .description p {
     color: #666;
-    font-size: 20px;
-    width: 50%;
+    width: 75%;
     line-height: 1.5;
 }
 
@@ -282,13 +294,6 @@ ul {
     border-top-right-radius: 0;
 }
 
-@media screen and (min-width: 1200.998px) {
-    .team .des,
-    .team .item:hover .des {
-        width: 92.5%
-    }
-}
-
 
 /* Force justify to the center. mlc */
 
@@ -354,4 +359,31 @@ footer {
 #portfolio,
 #team {
     background-color: var(--lite-bg-color);
+}
+
+
+/** Media queries */
+
+@media screen and (min-width: 1024px) {
+    html,
+    body {
+        font-size: var(--default-font-size);
+    }
+    nav {
+        padding: 0;
+    }
+    .navbar-nav>li>a {
+        line-height: 1;
+        /* Override Bootstrap mlc */
+    }
+    .description p {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1200.998px) {
+    .team .des,
+    .team .item:hover .des {
+        width: 92.5%
+    }
 }
