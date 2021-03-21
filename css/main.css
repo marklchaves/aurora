@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 :root {
-    --mobile-first-font-size: 24px;
-    --default-font-size: 18px;
+    /*
+    --mobile-first-font-size: 18px;
+    --default-font-size: 16px; */
     --lite-bg-color: white;
     --navbar-height: 50px;
 }
@@ -329,7 +330,7 @@ form {
 
 footer {
     background-color: var(--lite-bg-color);
-    padding: 1% 0;
+    padding: 1em;
 }
 
 
@@ -354,6 +355,7 @@ footer {
     display: flex;
     align-items: flex-start;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 #portfolio,
@@ -365,19 +367,8 @@ footer {
 /** Media queries */
 
 @media screen and (min-width: 1024px) {
-    html,
-    body {
-        font-size: var(--default-font-size);
-    }
-    nav {
-        padding: 0;
-    }
-    .navbar-nav>li>a {
-        line-height: 1;
-        /* Override Bootstrap mlc */
-    }
-    .description p {
-        width: 50%;
+    .row--flex-start {
+        flex-wrap: initial;
     }
 }
 
