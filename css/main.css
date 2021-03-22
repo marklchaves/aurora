@@ -85,7 +85,7 @@ ul {
 }
 
 
-/** Manual grid version mlc
+/* Manual grid version mlc
 #navbarSupportedContent {
     width: 50%;
     display: grid;
@@ -99,7 +99,7 @@ ul {
 */
 
 
-/*header style*/
+/** Header */
 
 .header {
     position: relative;
@@ -180,7 +180,7 @@ ul {
 }
 
 
-/*Portfolio*/
+/** Portfolio */
 
 .portfolio {
     margin: 3em 0;
@@ -200,8 +200,12 @@ ul {
     transform: translate(-50%, 0%);
 }
 
+.portfolio__title {
+    text-align: center;
+}
 
-/*blog style*/
+
+/** Blog */
 
 .blog {
     margin: 4em 0;
@@ -224,12 +228,6 @@ ul {
     transform: translate(-50%, 0%);
 }
 
-@media and (max-width: 768px) {
-    .team .item img {
-        width: 100%;
-    }
-}
-
 .blog .card-title {
     color: #F97300;
 }
@@ -237,6 +235,9 @@ ul {
 .blog .card-body {
     padding: 1em;
 }
+
+
+/** Team */
 
 .team {
     margin: 3em 0;
@@ -254,38 +255,18 @@ ul {
     overflow: hidden;
 }
 
+.team img {
+    width: 270px;
+    margin-left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+
+/** Card */
+
 .card {
     padding: 1% 0;
-}
-
-
-/** Need to use weird % offset for overlay. mlc */
-
-.team .des {
-    background: #F97300;
-    color: #fff;
-    text-align: center;
-    border-top-right-radius: 93%;
-    transition: .3s ease-in-out;
-    position: absolute;
-    width: 94%;
-    bottom: 6%;
-}
-
-@media screen and (max-width: 1024px) {
-    .team .des {
-        bottom: 0;
-    }
-}
-
-.team .item:hover .des {
-    height: 100%;
-    background: #f973007d;
-    position: absolute;
-    width: 94%;
-    padding: 5em;
-    top: 0;
-    border-top-right-radius: 0;
+    margin-bottom: 2em;
 }
 
 
@@ -342,12 +323,12 @@ footer {
 }
 
 
-/** Manual flex version mlc */
+/* Manual flex version mlc */
 
 .row--flex-start {
     display: flex;
     align-items: flex-start;
-    justify-content: space-around;
+    justify-content: flex-start;
     /* For xs screens keep the space around. */
     flex-wrap: wrap;
 }
@@ -394,12 +375,8 @@ footer {
     }
 }
 
-
-/* Overlay hack on large screens. mlc */
-
-@media (min-width: 1200.998px) {
-    .team .des,
-    .team .item:hover .des {
-        width: 92.5%
+@media (max-width: 375px) {
+    .card {
+        margin-bottom: 0;
     }
 }

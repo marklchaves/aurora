@@ -120,32 +120,41 @@
             <div class="row">
                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
                     <img src="images/portfolio/port8.png" class="img-fluid">
+                    <h5 class="portfolio__title">Portfolio 1</h5>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
                     <img src="images/portfolio/port8.png" class="img-fluid">
+                    <h5 class="portfolio__title">Portfolio 2</h5>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
                     <img src="images/portfolio/port8.png" class="img-fluid">
-                </div>
-
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
-                    <img src="images/portfolio/port8.png" class="img-fluid">
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
-                    <img src="images/portfolio/port8.png" class="img-fluid">
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
-                    <img src="images/portfolio/port8.png" class="img-fluid">
+                    <h5 class="portfolio__title">Portfolio 3</h5>
                 </div>
 
                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
                     <img src="images/portfolio/port8.png" class="img-fluid">
+                    <h5 class="portfolio__title">Portfolio 1</h5>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
                     <img src="images/portfolio/port8.png" class="img-fluid">
+                    <h5 class="portfolio__title">Portfolio 2</h5>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
                     <img src="images/portfolio/port8.png" class="img-fluid">
+                    <h5 class="portfolio__title">Portfolio 3</h5>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                    <img src="images/portfolio/port8.png" class="img-fluid">
+                    <h5 class="portfolio__title">Portfolio 1</h5>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                    <img src="images/portfolio/port8.png" class="img-fluid">
+                    <h5 class="portfolio__title">Portfolio 2</h5>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                    <img src="images/portfolio/port8.png" class="img-fluid">
+                    <h5 class="portfolio__title">Portfolio 3</h5>
                 </div>
             </div>
         </div>
@@ -221,32 +230,64 @@
             <h1 class="text-center">Our Team</h1>
             <div class="row">
                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 item">
-                    <img src="images/team-2.jpg" class="img-fluid" alt="team">
-                    <div class="des">
-                        Sara
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="images/team-2.jpg" class="img-fluid" alt="team">
+                        </div>
+                        <div class="card-body">
+                            <div class="des">
+                                Sara
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <span class="text-muted">Manager</span>
+                        </div>
                     </div>
-                    <span class="text-muted">Manager</span>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 item">
-                    <img src="images/team-3.jpg" class="img-fluid" alt="team">
-                    <div class="des">
-                        Chris
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="images/team-2.jpg" class="img-fluid" alt="team">
+                        </div>
+                        <div class="card-body">
+                            <div class="des">
+                                Sara
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <span class="text-muted">Manager</span>
+                        </div>
                     </div>
-                    <span class="text-muted">Engineer</span>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 item">
-                    <img src="images/team-2.jpg" class="img-fluid" alt="team">
-                    <div class="des">
-                        Layla
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="images/team-2.jpg" class="img-fluid" alt="team">
+                        </div>
+                        <div class="card-body">
+                            <div class="des">
+                                Sara
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <span class="text-muted">Manager</span>
+                        </div>
                     </div>
-                    <span class="text-muted">Developer</span>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 item">
-                    <img src="images/team-3.jpg" class="img-fluid" alt="team">
-                    <div class="des">
-                        J.Jirard
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="images/team-2.jpg" class="img-fluid" alt="team">
+                        </div>
+                        <div class="card-body">
+                            <div class="des">
+                                Sara
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <span class="text-muted">Manager</span>
+                        </div>
                     </div>
-                    <span class="text-muted">Support</span>
                 </div>
             </div>
         </div>
@@ -369,6 +410,9 @@
             },
             false);
 
+        /** jQuery */
+
+        /* Show fixed nav only on wide displays. */
         $(window).on('resize', function() {
             if ($(window).width() > 767.998) {
                 $('nav').addClass('fixed-top');
@@ -376,6 +420,11 @@
                 $('nav').removeClass('fixed-top');
             }
         })
+
+        /* Force mobile menu to close on click. */
+        $('.navbar-nav>li>a').on('click', function() {
+            $('.navbar-collapse').collapse('hide');
+        });
     </script>
 
 </body>
