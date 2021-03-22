@@ -1,16 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 :root {
-    /*
-    --mobile-first-font-size: 18px;
-    --default-font-size: 16px; */
     --lite-bg-color: white;
     --navbar-height: 50px;
-}
-
-* { 
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
 }
 
 body {
@@ -18,8 +9,14 @@ body {
     margin: 0;
     background: #f4f4f4;
     width: 100%;
+}
+
+
+/* Stop horizontal scroll on entire page. Rows is important. */
+
+body,
+.row {
     overflow-x: hidden;
-    /* Stop horizontal scroll on entire page. */
 }
 
 html,
@@ -31,11 +28,6 @@ h5,
 h6,
 a {
     font-family: "Raleway", Arial, Helvetica, sans-serif;
-}
-
-html,
-body {
-    font-size: var(--mobile-first-font-size);
 }
 
 nav {
@@ -84,11 +76,6 @@ ul {
     list-style: none;
 }
 
-.navbar-nav>li>a {
-    line-height: 2;
-    /* Override Bootstrap mlc */
-}
-
 .bg-dark {
     background-color: #343a40!important
 }
@@ -120,7 +107,7 @@ ul {
     background-size: cover;
     background-position: center;
     width: 100%;
-    margin-top: var(--navbar-height);
+    margin-top: 0;
 }
 
 .overlay {
@@ -272,7 +259,7 @@ ul {
 }
 
 
-/** Need to use weird % offset for overlay. */
+/** Need to use weird % offset for overlay. mlc */
 
 .team .des {
     background: #F97300;
@@ -302,7 +289,7 @@ ul {
 }
 
 
-/* Force justify to the center. mlc */
+/* Force center justify. mlc */
 
 form {
     width: 75%;
@@ -348,7 +335,7 @@ footer {
 }
 
 
-/* Indent a list. */
+/* Indent a list. mlc */
 
 .ul--indent {
     margin-left: 3%;
@@ -360,9 +347,17 @@ footer {
 .row--flex-start {
     display: flex;
     align-items: flex-start;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    /* For xs screens keep the space around. */
     flex-wrap: wrap;
 }
+
+.footer__content {
+    margin: 0 1em;
+}
+
+
+/* Alternate bg colours for contrast. mlc */
 
 #portfolio,
 #team {
@@ -370,15 +365,39 @@ footer {
 }
 
 
-/** Media queries */
+/** Media queries mlc */
 
-@media screen and (min-width: 1024px) {
-    .row--flex-start {
-        flex-wrap: initial;
+
+/* Offset for a fixed navbar on wider screens. */
+
+@media (min-width: 768px) {
+    .header {
+        margin-top: var(--navbar-height);
     }
 }
 
-@media screen and (min-width: 1200.998px) {
+
+/* This allows landscape grids to be nx2. mlc */
+
+@media (max-width: 375px) and (orientation:portrait) {
+    .col-xs-6 {
+        width: 100%;
+    }
+}
+
+
+/* With larger screens speace evenly for centering. mlc */
+
+@media (min-width: 375.998px) {
+    .row--flex-start {
+        justify-content: space-evenly;
+    }
+}
+
+
+/* Overlay hack on large screens. mlc */
+
+@media (min-width: 1200.998px) {
     .team .des,
     .team .item:hover .des {
         width: 92.5%
