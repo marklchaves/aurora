@@ -1,3 +1,5 @@
+/** Mostly mobile first design. */
+
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 :root {
     --lite-bg-color: white;
@@ -121,7 +123,7 @@ ul {
 
 .description {
     position: absolute;
-    top: 30%;
+    top: 20%;
     margin: auto;
     padding: 2em;
 }
@@ -367,16 +369,17 @@ footer {
 }
 
 
-/* With larger screens speace evenly for centering. mlc */
+/* Larger devies */
 
 @media (min-width: 375.998px) {
+    /* With larger screens speace evenly for centering. mlc */
     .row--flex-start {
         justify-content: space-evenly;
     }
-}
-
-@media (max-width: 375px) {
     .card {
         margin-bottom: 0;
+    }
+    .description {
+        top: 30%;
     }
 }
