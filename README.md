@@ -19,6 +19,13 @@
 1. Changed the portfolio, blog, and team sections to break into nx2 layouts instead of nx1 for mobile.
 1. Fixed the stretched out blog preview images.
 1. Fixed the team overlay to be flush on desktop and mobile.
+1. Fixed mobile menu not closing when clicked (jQuery).
+1. Removed overlay and animation for team section.
+1. Changed team to card layout.
+1. Added bottom margin on cards for mobile.
+1. Adjusted top spacing for hero text on mobile.
+1. Used mobile first CSS.
+1. Started using [BEM for CSS](http://getbem.com/naming/).
 
 ### Screengrabs
 
