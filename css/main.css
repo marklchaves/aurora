@@ -123,8 +123,8 @@ ul {
 
 .description {
     position: absolute;
-    top: 20%;
-    margin: auto;
+    /*top: 20%;*/
+    margin: 15% auto;
     padding: 2em;
 }
 
@@ -351,35 +351,62 @@ footer {
 /** Media queries mlc */
 
 
-/* Offset for a fixed navbar on wider screens. */
+/* Medium screens and larger. */
 
-@media (min-width: 768px) {
+@media (min-width: 767.998px) {
+    /* Offset for a fixed navbar. */
     .header {
         margin-top: var(--navbar-height);
+    }
+    /* Top offset for hero description text. */
+    .description {
+        top: 30%;
+        margin: auto;
+    }
+}
+
+@media (min-width: 767.998px) {
+    .fixed-top {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    }
+}
+
+@media (max-width: 768px) {
+    .fixed-top {
+        position: relative;
+    }
+}
+
+@media (max-width: 768px) and (orientation:landscape) {
+    .description {
+        top: 10%;
+        margin: auto;
     }
 }
 
 
-/* This allows landscape grids to be nx2. mlc */
+/* Small screens in portrait. */
 
-@media (max-width: 375px) and (orientation:portrait) {
+@media (max-width: 376px) and (orientation:portrait) {
+    /* This allows landscape grids to be nx2. mlc */
     .col-xs-6 {
         width: 100%;
     }
 }
 
 
-/* Larger devies */
+/* Everything except small screens. */
 
-@media (min-width: 375.998px) {
+@media (min-width: 375.998pxpx) {
     /* With larger screens speace evenly for centering. mlc */
     .row--flex-start {
         justify-content: space-evenly;
     }
     .card {
         margin-bottom: 0;
-    }
-    .description {
-        top: 30%;
     }
 }
