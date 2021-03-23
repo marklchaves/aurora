@@ -353,7 +353,7 @@ footer {
 
 /* Medium screens and larger. */
 
-@media (min-width: 767.998px) {
+@media (min-width: 1024px) {
     /* Offset for a fixed navbar. */
     .header {
         margin-top: var(--navbar-height);
@@ -365,7 +365,7 @@ footer {
     }
 }
 
-@media (min-width: 767.998px) {
+@media (min-width: 1024px) {
     .fixed-top {
         position: fixed;
         top: 0;
@@ -375,13 +375,13 @@ footer {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767.998px) {
     .fixed-top {
         position: relative;
     }
 }
 
-@media (max-width: 768px) and (orientation:landscape) {
+@media (max-width: 767.998px) and (orientation:landscape) {
     .description {
         top: 10%;
         margin: auto;
@@ -391,7 +391,7 @@ footer {
 
 /* Small screens in portrait. */
 
-@media (max-width: 376px) and (orientation:portrait) {
+@media (max-width: 375.998px) and (orientation:portrait) {
     /* This allows landscape grids to be nx2. mlc */
     .col-xs-6 {
         width: 100%;
@@ -401,7 +401,7 @@ footer {
 
 /* Everything except small screens. */
 
-@media (min-width: 375.998pxpx) {
+@media (min-width: 376px) {
     /* With larger screens speace evenly for centering. mlc */
     .row--flex-start {
         justify-content: space-evenly;
