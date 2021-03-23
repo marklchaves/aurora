@@ -412,14 +412,15 @@
 
         /** jQuery */
 
-        /* Show fixed nav only on wide displays. */
         $(window).on('resize', function() {
-            if ($(window).width() >= 768) {
+            /* Show fixed nav only on wide displays. */
+            if ($(window).width() >= 1024) {
                 $('nav').addClass('fixed-top');
             } else {
                 $('nav').removeClass('fixed-top');
             }
-            if ($(window).width() <= 360) {
+            /* Adjust height for small displays. */
+            if ($(window).width() <= 576) {
                 $('header').css('height', '740px');
             }
         })

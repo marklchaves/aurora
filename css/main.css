@@ -354,6 +354,14 @@ footer {
 /* Medium screens and larger. */
 
 @media (min-width: 1024px) {
+    /* Breakpoint for fixed top nav. */
+    .fixed-top {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    }
     /* Offset for a fixed navbar. */
     .header {
         margin-top: var(--navbar-height);
@@ -365,23 +373,15 @@ footer {
     }
 }
 
-@media (min-width: 1024px) {
-    .fixed-top {
-        position: fixed;
-        top: 0;
-        right: 0;
-        left: 0;
-        z-index: 1030;
-    }
-}
-
-@media (max-width: 767.998px) {
+@media (max-width: 1023px) {
+    /* Breakpoint for non fixed top nav. */
     .fixed-top {
         position: relative;
     }
 }
 
-@media (max-width: 767.998px) and (orientation:landscape) {
+@media (max-width: 1023px) and (orientation:landscape) {
+    /* Adjust top space for hero description on landscape. */
     .description {
         top: 10%;
         margin: auto;
@@ -389,17 +389,7 @@ footer {
 }
 
 
-/* Small screens in portrait. */
-
-@media (max-width: 375.998px) and (orientation:portrait) {
-    /* This allows landscape grids to be nx2. mlc */
-    .col-xs-6 {
-        width: 100%;
-    }
-}
-
-
-/* Everything except small screens. */
+/* Footer spacing for everything except small screens. */
 
 @media (min-width: 376px) {
     /* With larger screens speace evenly for centering. mlc */
@@ -408,5 +398,15 @@ footer {
     }
     .card {
         margin-bottom: 0;
+    }
+}
+
+
+/* Small screens in portrait. */
+
+@media (max-width: 375px) and (orientation:portrait) {
+    /* This allows landscape grids to be nx2. mlc */
+    .col-xs-6 {
+        width: 100%;
     }
 }
