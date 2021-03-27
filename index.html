@@ -67,19 +67,19 @@
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav navbar-right">
           <li class="nav-item">
-            <a class="nav-link" data-value="about" href="#">About</a>
+            <a class="nav-link" data-value="about" href="#about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" data-value="portfolio" href="#">Portfolio</a>
+            <a class="nav-link" data-value="portfolio" href="#portfolio">Portfolio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" data-value="blog" href="#">Blog</a>
+            <a class="nav-link" data-value="blog" href="#blog">Blog</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" data-value="team" href="#">Team</a>
+            <a class="nav-link" data-value="team" href="#team">Team</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" data-value="contact" href="#">Contact</a>
+            <a class="nav-link" data-value="contact" href="#contact">Contact</a>
           </li>
         </ul>
       </div>
@@ -99,7 +99,7 @@
             <a
               id="about-link"
               data-value="about" 
-              href="#"
+              href="#about"
               class="btn btn-outline-secondary btn-lg active"
               aria-pressed="true"
               role="button"
@@ -352,7 +352,7 @@
           <div class="footer__content">
             <h3>About</h3>
             <ul class="list-unstyled text-small">
-              <li><a id="team-link" data-value="team" class="text-muted" href="#">Team</a></li>
+              <li><a id="team-link" data-value="team" class="text-muted" href="#team">Team</a></li>
               <li><a class="text-muted" href="#">Locations</a></li>
               <li><a class="text-muted" href="#">Privacy</a></li>
               <li><a class="text-muted" href="#">Terms</a></li>
@@ -398,10 +398,10 @@
       document.querySelector("#about-link").addEventListener(
         "click",
         (evt) => {
+          evt.preventDefault();
           document.querySelector("#about").scrollIntoView({
             behavior: "smooth",
           });
-          event.preventDefault();
           history.pushState({}, "About", "#about"); // Update address bar.
         },
         false
@@ -411,10 +411,10 @@
       document.querySelector("#team-link").addEventListener(
         "click",
         (evt) => {
+          evt.preventDefault();
           document.querySelector("#team").scrollIntoView({
             behavior: "smooth",
           });
-          event.preventDefault();
           history.pushState({}, "Team", "#team"); // Update address bar.
         },
         false
