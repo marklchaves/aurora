@@ -6,6 +6,21 @@
     --navbar-height: 50px;
 }
 
+/** 
+ * CSS trick for avoiding header overlapping
+ * content for menu anchors.
+ *
+ * From Adrian Garner on Stack Overflow 
+ *
+ * https://stackoverflow.com/questions/4086107/fixed-page-header-overlaps-in-page-anchors 
+ */
+ :target::before {
+    content: "";
+    display: block;
+    height: var(--navbar-height); /* Fixed header height for this page. */
+    margin: -var(--navbar-height) 0 0; /* To compensate for a huge space at the top. */
+}
+
 body {
     padding: 0;
     margin: 0;
@@ -105,7 +120,7 @@ ul {
 
 .header {
     position: relative;
-    background-image: url('../images/headerback.jpg');
+    background-image: url('../images/bali-nyuh-kuning-cafe-laptop-coffee-768w.jpg');
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -351,7 +366,6 @@ footer {
 
 /** Media queries mlc */
 
-
 /* Medium screens and larger. */
 
 @media (min-width: 1024px) {
@@ -371,6 +385,10 @@ footer {
     .description {
         top: 30%;
         margin: auto;
+    }
+    /* Responsive Hero */
+    .header {
+        background-image: url('../images/bali-nyuh-kuning-cafe-laptop-coffee-1920w.jpg');
     }
     /* Increase contact form margins on wider screens. */
     .contact-form {
