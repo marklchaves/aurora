@@ -280,7 +280,8 @@ form {
 }
 
 .contact-form {
-    margin: 6em 0;
+    /* On mobile make space before footer. */
+    margin-bottom: 6em;
     position: relative;
 }
 
@@ -371,6 +372,10 @@ footer {
         top: 30%;
         margin: auto;
     }
+    /* Increase contact form margins on wider screens. */
+    .contact-form {
+        margin: 6em 0;
+    }
 }
 
 @media (max-width: 1023px) {
@@ -396,6 +401,11 @@ footer {
     .row--flex-start {
         justify-content: space-evenly;
     }
+}
+
+/* For wider screens, the cards don't need a bottom margin. */
+
+@media (min-width: 768px) {
     .card {
         margin-bottom: 0;
     }

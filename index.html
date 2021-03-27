@@ -320,44 +320,6 @@
         </div>
     </div>
 
-    <!-- Option 1
-    <footer class="footer">
-        <div class="container">
-            <div class="row row--justify-center">
-                <div class="col-lg-4 col-md-4 col-sm-4">
-                    <h3>About</h3>
-                    <ul class="list-unstyled text-small ">
-                        <li><a class="text-muted " href="# ">Team</a></li>
-                        <li><a class="text-muted " href="# ">Locations</a></li>
-                        <li><a class="text-muted " href="# ">Privacy</a></li>
-                        <li><a class="text-muted " href="# ">Terms</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-4">
-                    <h3>Features</h3>
-                    <ul class="list-unstyled text-small">
-                        <li><a class="text-muted" href="#">Cool stuff</a></li>
-                        <li><a class="text-muted" href="#">Random feature</a></li>
-                        <li><a class="text-muted" href="#">Team feature</a></li>
-                        <li><a class="text-muted" href="#">Stuff for developers</a></li>
-                        <li><a class="text-muted" href="#">Another one</a></li>
-                        <li><a class="text-muted" href="#">Last time</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-4">
-                    <h3>Resources</h3>
-                    <ul class="list-unstyled text-small ">
-                        <li><a class="text-muted " href="# ">Resource</a></li>
-                        <li><a class="text-muted " href="# ">Resource name</a></li>
-                        <li><a class="text-muted " href="# ">Another resource</a></li>
-                        <li><a class="text-muted " href="# ">Final resource</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
--->
-
     <footer class="footer ">
         <div class="container-fluid ">
             <div class="row row--flex-start ">
@@ -399,7 +361,13 @@
     <script type="text/javascript " src='js/main.js'></script>
 
     <script>
-        /* Allow smooth scrolling from hero to About section. */
+        /** 
+         * Allow smooth scrolling from hero to About section. 
+         * 
+         * Here, we also preserve browser history.
+         * 
+         * mlc
+         */
         document.querySelector("#about-link").addEventListener("click",
             (evt) => {
                 document.querySelector("#about").scrollIntoView({
