@@ -10,19 +10,6 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="css/main.css" />
 
-    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
-
-    <script>
-      $(document).ready(function () {
-        $(".dropdown-toggle").dropdown();
-      });
-    </script>
-
-    <!-- These next 2 items are legacy. May not need? mlc -->
-
-    <!-- Need this for non nav bar dropdowns. -->
-    <script src="https://unpkg.com/@popperjs/core@2"></script>
-
     <style>
       /* Fix a bit of a bug with the default dropdown-menu-right class */
 
@@ -70,7 +57,9 @@
             <a class="nav-link" data-value="about" href="#about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" data-value="portfolio" href="#portfolio">Portfolio</a>
+            <a class="nav-link" data-value="portfolio" href="#portfolio"
+              >Portfolio</a
+            >
           </li>
           <li class="nav-item">
             <a class="nav-link" data-value="blog" href="#blog">Blog</a>
@@ -92,18 +81,16 @@
           <div class="description">
             <h1>Hello, Welcome To My official Website</h1>
             <p>
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-              cupidatat non proident, sunt in culpa qui officia deserunt mollit
-              anim id est laborum.
+              Unicorn food truck slow-carb knausgaard migas. Enim blog literally, nostrud sriracha unicorn et coloring book fingerstache jean shorts meh deep v viral next level.
             </p>
             <a
               id="about-link"
-              data-value="about" 
+              data-value="about"
               href="#about"
               class="btn btn-outline-secondary btn-lg active"
               aria-pressed="true"
               role="button"
-              >See more</a
+              >Learn more</a
             >
           </div>
         </div>
@@ -120,15 +107,15 @@
             <span class="text-center">S.Web Developer</span>
           </div>
           <div class="col-lg-8 col-md-8 col-sm-12 desc">
-            <h3>D.John</h3>
+            <h3>Aurora C.</h3>
             <p>
-              ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-              minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-              aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
+              Meditation deserunt bespoke, typewriter ennui 3 wolf moon venmo migas austin aliqua. Lorem cloud bread succulents seitan ea est commodo af bitters. Wolf hot chicken laboris waistcoat umami.
+            </p> 
+            <p>
+              You probably haven't heard of them before they sold out fixie selfies pariatur synth tumeric migas raw denim. Sartorial mustache literally, freegan cliche iceland pop-up raclette biodiesel sriracha portland. Flannel ethical edison bulb, cardigan normcore unicorn portland kinfolk enim cronut williamsburg.
+            </p>
+            <p>
+              Cillum master cleanse forage eiusmod, fingerstache sint put a bird on it tousled literally.
             </p>
           </div>
         </div>
@@ -196,8 +183,7 @@
               <div class="card-body">
                 <h4 class="card-title">Post Title</h4>
                 <p class="card-text">
-                  proident, sunt in culpa qui officia deserunt mollit anim id
-                  est laborum.
+                  Hashtag eu roof party magna heirloom craft beer, aesthetic tacos direct trade hoodie in et beard.
                 </p>
               </div>
               <div class="card-footer text-center">
@@ -214,8 +200,7 @@
               <div class="card-body">
                 <h4 class="card-title">Post Title</h4>
                 <p class="card-text">
-                  proident, sunt in culpa qui officia deserunt mollit anim id
-                  est laborum.
+                  Hashtag eu roof party magna heirloom craft beer, aesthetic tacos direct trade hoodie in et beard.
                 </p>
               </div>
               <div class="card-footer text-center">
@@ -232,8 +217,7 @@
               <div class="card-body">
                 <h4 class="card-title">Post Title</h4>
                 <p class="card-text">
-                  proident, sunt in culpa qui officia deserunt mollit anim id
-                  est laborum.
+                  Hashtag eu roof party magna heirloom craft beer, aesthetic tacos direct trade hoodie in et beard.
                 </p>
               </div>
               <div class="card-footer text-center">
@@ -352,7 +336,15 @@
           <div class="footer__content">
             <h3>About</h3>
             <ul class="list-unstyled text-small">
-              <li><a id="team-link" data-value="team" class="text-muted" href="#team">Team</a></li>
+              <li>
+                <a
+                  id="team-link"
+                  data-value="team"
+                  class="text-muted"
+                  href="#team"
+                  >Team</a
+                >
+              </li>
               <li><a class="text-muted" href="#">Locations</a></li>
               <li><a class="text-muted" href="#">Privacy</a></li>
               <li><a class="text-muted" href="#">Terms</a></li>
@@ -380,12 +372,19 @@
           </div>
         </div>
       </div>
-      <details><summary>Credits</summary>Images courtesy of <a href="https://www.caughtmyeye.cc">caught my eye.</a></details>
+      <details>
+        <summary>Credits</summary>
+        Images by
+        <a href="https://www.caughtmyeye.cc">caught my eye</a>.
+        Words by <a href="https://hipsum.co/"">Hipster Ipsum</a>.
+      </details>
     </footer>
 
+    <script async type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+
     <!-- add Javasscript file from js file -->
-    <script type="text/javascript " src="js/bootstrap.min.js "></script>
-    <script type="text/javascript " src="js/main.js"></script>
+    <script async type="text/javascript " src="js/bootstrap.min.js "></script>
+    <script defer type="text/javascript " src="js/main.js"></script>
 
     <script>
       /**

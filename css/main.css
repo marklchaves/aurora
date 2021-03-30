@@ -1,7 +1,8 @@
 /** Mostly mobile first design. */
 
-@import url('https://fonts.googleapis.com/css?family=Raleway');
 :root {
+    --prim-accent-color: #F97300; /* Orange */
+    --prim-bg-color: #f4f4f4; /* Off white */
     --lite-bg-color: white;
     --navbar-height: 50px;
 }
@@ -24,7 +25,7 @@
 body {
     padding: 0;
     margin: 0;
-    background: #f4f4f4;
+    background: var(--prim-bg-color);
     width: 100%;
 }
 
@@ -44,7 +45,9 @@ h4,
 h5,
 h6,
 a {
-    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    letter-spacing: .1em;
 }
 
 nav {
@@ -54,12 +57,12 @@ nav {
 
 .navbar {
     display: flex;
-    background: #F97300;
+    background: var(--prim-accent-color);
 }
 
 .nav-link,
 .navbar-brand {
-    color: #f4f4f4;
+    color: var(--prim-bg-color);
     cursor: pointer;
 }
 
@@ -77,8 +80,8 @@ nav {
 }
 
 .nav-link:hover {
-    background: #f4f4f4;
-    color: #f97300;
+    background: var(--prim-bg-color);
+    color: var(--prim-accent-color);
 }
 
 .navbar-collapse {
@@ -86,7 +89,7 @@ nav {
 }
 
 .navbar-toggler {
-    background: #f97300 !important;
+    background: var(--prim-accent-color) !important;
 }
 
 ul {
@@ -94,11 +97,11 @@ ul {
 }
 
 .bg-dark {
-    background-color: #f97300!important
+    background-color: var(--prim-accent-color)!important
 }
 
 .bg-primary {
-    background-color: #f4f4f4!important
+    background-color: var(--prim-bg-color)!important
 }
 
 
@@ -144,7 +147,7 @@ ul {
 }
 
 .description h1 {
-    color: #F97300;
+    color: var(--prim-accent-color);
 }
 
 .description p {
@@ -154,8 +157,8 @@ ul {
 }
 
 .description button {
-    border: 1px solid #F97300;
-    background: #F97300;
+    border: 1px solid var(--prim-accent-color);
+    background: var(--prim-accent-color);
     color: #fff;
 }
 
@@ -166,7 +169,7 @@ ul {
 }
 
 .about h1 {
-    color: #F97300;
+    color: var(--prim-accent-color);
     margin: 2em;
 }
 
@@ -206,7 +209,7 @@ ul {
 }
 
 .portfolio h1 {
-    color: #F97300;
+    color: var(--prim-accent-color);
     margin: 2em;
 }
 
@@ -230,7 +233,7 @@ ul {
 }
 
 .blog h1 {
-    color: #F97300;
+    color: var(--prim-accent-color);
     margin: 2em;
 }
 
@@ -246,7 +249,7 @@ ul {
 }
 
 .blog .card-title {
-    color: #F97300;
+    color: var(--prim-accent-color);
 }
 
 .blog .card-body {
@@ -260,10 +263,11 @@ ul {
     margin: 3em 0;
     padding-bottom: 1em;
     position: relative;
+    border: 1px solid var(--prim-bg-color);
 }
 
 .team h1 {
-    color: #F97300;
+    color: var(--prim-accent-color);
     margin: 2em;
 }
 
@@ -302,7 +306,7 @@ form {
 
 .contact-form h1 {
     padding: 2em 1px;
-    color: #F97300;
+    color: var(--prim-accent-color);
 }
 
 .contact-form .right {
@@ -310,7 +314,7 @@ form {
 }
 
 .contact-form .right .btn-secondary {
-    background: #F97300;
+    background: var(--prim-accent-color);
     color: #fff;
     border: 0;
 }
@@ -380,16 +384,14 @@ footer {
     /* Offset for a fixed navbar. */
     .header {
         margin-top: var(--navbar-height);
+        background-image: url('../images/bali-nyuh-kuning-cafe-laptop-coffee-1920w.jpg');
     }
     /* Top offset for hero description text. */
     .description {
         top: 30%;
         margin: auto;
     }
-    /* Responsive Hero */
-    .header {
-        background-image: url('../images/bali-nyuh-kuning-cafe-laptop-coffee-1920w.jpg');
-    }
+    
     /* Increase contact form margins on wider screens. */
     .contact-form {
         margin: 6em 0;
