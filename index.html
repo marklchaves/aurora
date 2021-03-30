@@ -10,19 +10,6 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="css/main.css" />
 
-    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
-
-    <script>
-      $(document).ready(function () {
-        $(".dropdown-toggle").dropdown();
-      });
-    </script>
-
-    <!-- These next 2 items are legacy. May not need? mlc -->
-
-    <!-- Need this for non nav bar dropdowns. -->
-    <script src="https://unpkg.com/@popperjs/core@2"></script>
-
     <style>
       /* Fix a bit of a bug with the default dropdown-menu-right class */
 
@@ -70,7 +57,9 @@
             <a class="nav-link" data-value="about" href="#about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" data-value="portfolio" href="#portfolio">Portfolio</a>
+            <a class="nav-link" data-value="portfolio" href="#portfolio"
+              >Portfolio</a
+            >
           </li>
           <li class="nav-item">
             <a class="nav-link" data-value="blog" href="#blog">Blog</a>
@@ -98,7 +87,7 @@
             </p>
             <a
               id="about-link"
-              data-value="about" 
+              data-value="about"
               href="#about"
               class="btn btn-outline-secondary btn-lg active"
               aria-pressed="true"
@@ -352,7 +341,15 @@
           <div class="footer__content">
             <h3>About</h3>
             <ul class="list-unstyled text-small">
-              <li><a id="team-link" data-value="team" class="text-muted" href="#team">Team</a></li>
+              <li>
+                <a
+                  id="team-link"
+                  data-value="team"
+                  class="text-muted"
+                  href="#team"
+                  >Team</a
+                >
+              </li>
               <li><a class="text-muted" href="#">Locations</a></li>
               <li><a class="text-muted" href="#">Privacy</a></li>
               <li><a class="text-muted" href="#">Terms</a></li>
@@ -380,8 +377,14 @@
           </div>
         </div>
       </div>
-      <details><summary>Credits</summary>Images courtesy of <a href="https://www.caughtmyeye.cc">caught my eye.</a></details>
+      <details>
+        <summary>Credits</summary>
+        Images courtesy of
+        <a href="https://www.caughtmyeye.cc">caught my eye.</a>
+      </details>
     </footer>
+
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
 
     <!-- add Javasscript file from js file -->
     <script type="text/javascript " src="js/bootstrap.min.js "></script>

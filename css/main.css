@@ -1,6 +1,5 @@
 /** Mostly mobile first design. */
 
-@import url('https://fonts.googleapis.com/css?family=Raleway');
 :root {
     --lite-bg-color: white;
     --navbar-height: 50px;
@@ -44,7 +43,7 @@ h4,
 h5,
 h6,
 a {
-    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 nav {
@@ -380,16 +379,14 @@ footer {
     /* Offset for a fixed navbar. */
     .header {
         margin-top: var(--navbar-height);
+        background-image: url('../images/bali-nyuh-kuning-cafe-laptop-coffee-1920w.jpg');
     }
     /* Top offset for hero description text. */
     .description {
         top: 30%;
         margin: auto;
     }
-    /* Responsive Hero */
-    .header {
-        background-image: url('../images/bali-nyuh-kuning-cafe-laptop-coffee-1920w.jpg');
-    }
+    
     /* Increase contact form margins on wider screens. */
     .contact-form {
         margin: 6em 0;
