@@ -6,20 +6,13 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Add bootstrap css file. -->
+    <!-- Local Bootstrap CSS file. -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="css/main.css" />
 
-    <style>
-      /* Fix a bit of a bug with the default dropdown-menu-right class */
+    <!-- 3rd party CSS. -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/marklchaves/cme-to-top-button@1.0.0/dist/cme-to-top-button.min.css">
 
-      @media only screen and (min-width: 1024px) {
-        .dropdown-menu-lg-right {
-          left: unset;
-          right: 0 !important;
-        }
-      }
-    </style>
   </head>
 
   <body>
@@ -103,7 +96,7 @@
         <h1 class="text-center">About Me</h1>
         <div class="row">
           <div class="col-lg-4 col-md-4 col-sm-12">
-            <img src="images/team-3.jpg" class="img-fluid" />
+            <img data-src="images/team-3.jpg" class="lazy img-fluid" />
             <span class="text-center">S.Web Developer</span>
           </div>
           <div class="col-lg-8 col-md-8 col-sm-12 desc">
@@ -128,41 +121,41 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
-            <img src="images/portfolio/port8.png" class="img-fluid" />
+            <img data-src="images/portfolio/port8.png" class="lazy img-fluid" />
             <h5 class="portfolio__title">Portfolio 1</h5>
           </div>
           <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
-            <img src="images/portfolio/port8.png" class="img-fluid" />
+            <img data-src="images/portfolio/port8.png" class="lazy img-fluid" />
             <h5 class="portfolio__title">Portfolio 2</h5>
           </div>
           <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
-            <img src="images/portfolio/port8.png" class="img-fluid" />
+            <img data-src="images/portfolio/port8.png" class="lazy img-fluid" />
             <h5 class="portfolio__title">Portfolio 3</h5>
           </div>
 
           <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
-            <img src="images/portfolio/port8.png" class="img-fluid" />
+            <img data-src="images/portfolio/port8.png" class="lazy img-fluid" />
             <h5 class="portfolio__title">Portfolio 1</h5>
           </div>
           <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
-            <img src="images/portfolio/port8.png" class="img-fluid" />
+            <img data-src="images/portfolio/port8.png" class="lazy img-fluid" />
             <h5 class="portfolio__title">Portfolio 2</h5>
           </div>
           <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
-            <img src="images/portfolio/port8.png" class="img-fluid" />
+            <img data-src="images/portfolio/port8.png" class="lazy img-fluid" />
             <h5 class="portfolio__title">Portfolio 3</h5>
           </div>
 
           <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
-            <img src="images/portfolio/port8.png" class="img-fluid" />
+            <img data-src="images/portfolio/port8.png" class="lazy img-fluid" />
             <h5 class="portfolio__title">Portfolio 1</h5>
           </div>
           <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
-            <img src="images/portfolio/port8.png" class="img-fluid" />
+            <img data-src="images/portfolio/port8.png" class="lazy img-fluid" />
             <h5 class="portfolio__title">Portfolio 2</h5>
           </div>
           <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
-            <img src="images/portfolio/port8.png" class="img-fluid" />
+            <img data-src="images/portfolio/port8.png" class="lazy img-fluid" />
             <h5 class="portfolio__title">Portfolio 3</h5>
           </div>
         </div>
@@ -177,7 +170,7 @@
           <div class="col-md-4 col-lg-4 col-sm-6 col-xs-6">
             <div class="card">
               <div class="card-img">
-                <img src="images/posts/news-square.jpg" class="img-fluid" />
+                <img data-src="images/posts/news-square.jpg" class="lazy img-fluid" />
               </div>
 
               <div class="card-body">
@@ -194,7 +187,7 @@
           <div class="col-md-4 col-lg-4 col-sm-6 col-xs-6">
             <div class="card">
               <div class="card-img">
-                <img src="images/posts/news-square.jpg" class="img-fluid" />
+                <img data-src="images/posts/news-square.jpg" class="lazy img-fluid" />
               </div>
 
               <div class="card-body">
@@ -211,7 +204,7 @@
           <div class="col-md-4 col-lg-4 col-sm-6 col-xs-6">
             <div class="card">
               <div class="card-img">
-                <img src="images/posts/news-square.jpg" class="img-fluid" />
+                <img data-src="images/posts/news-square.jpg" class="lazy img-fluid" />
               </div>
 
               <div class="card-body">
@@ -237,7 +230,7 @@
           <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 item">
             <div class="card">
               <div class="card-img">
-                <img src="images/team-2.jpg" class="img-fluid" alt="team" />
+                <img data-src="images/team-2.jpg" class="lazy img-fluid" alt="team" />
               </div>
               <div class="card-body">
                 <div class="des">Sara</div>
@@ -250,7 +243,7 @@
           <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 item">
             <div class="card">
               <div class="card-img">
-                <img src="images/team-2.jpg" class="img-fluid" alt="team" />
+                <img data-src="images/team-2.jpg" class="lazy img-fluid" alt="team" />
               </div>
               <div class="card-body">
                 <div class="des">Sara</div>
@@ -263,7 +256,7 @@
           <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 item">
             <div class="card">
               <div class="card-img">
-                <img src="images/team-2.jpg" class="img-fluid" alt="team" />
+                <img data-src="images/team-2.jpg" class="lazy img-fluid" alt="team" />
               </div>
               <div class="card-body">
                 <div class="des">Sara</div>
@@ -276,7 +269,7 @@
           <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 item">
             <div class="card">
               <div class="card-img">
-                <img src="images/team-2.jpg" class="img-fluid" alt="team" />
+                <img data-src="images/team-2.jpg" class="lazy img-fluid" alt="team" />
               </div>
               <div class="card-body">
                 <div class="des">Sara</div>
@@ -372,21 +365,73 @@
           </div>
         </div>
       </div>
-      <details>
+      <details id="credits">
         <summary>Credits</summary>
         Images by
         <a href="https://www.caughtmyeye.cc">caught my eye</a>.
         Words by <a href="https://hipsum.co/"">Hipster Ipsum</a>.
+        Lazy load by <a href="https://imagekit.io/">ImageKit.io</a>.
       </details>
     </footer>
 
+    <!-- JavaScript libraries. Order is important. -->
     <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
-
-    <!-- add Javasscript file from js file -->
     <script async type="text/javascript " src="js/bootstrap.min.js "></script>
     <script defer type="text/javascript " src="js/main.js"></script>
 
+    <!-- Inline scirpts. -->
     <script>
+      /** Lazy Loading */
+      document.addEventListener("DOMContentLoaded", function () {
+        let lazyloadImages;
+      
+        if ("IntersectionObserver" in window) {
+          lazyloadImages = document.querySelectorAll(".lazy");
+          let imageObserver = new IntersectionObserver(function (entries, observer) {
+            entries.forEach(function (entry) {
+              if (entry.isIntersecting) {
+                let image = entry.target;
+                image.src = image.dataset.src;
+                image.classList.remove("lazy");
+                imageObserver.unobserve(image);
+              }
+            });
+          });
+        
+          lazyloadImages.forEach(function (image) {
+            imageObserver.observe(image);
+          });
+        } else {
+          let lazyloadThrottleTimeout;
+          lazyloadImages = document.querySelectorAll(".lazy");
+        
+          function lazyload() {
+            if (lazyloadThrottleTimeout) {
+              clearTimeout(lazyloadThrottleTimeout);
+            }
+          
+            lazyloadThrottleTimeout = setTimeout(function () {
+              let scrollTop = window.pageYOffset;
+              lazyloadImages.forEach(function (img) {
+                if (img.offsetTop < window.innerHeight + scrollTop) {
+                  img.src = img.dataset.src;
+                  img.classList.remove("lazy");
+                }
+              });
+              if (lazyloadImages.length == 0) {
+                document.removeEventListener("scroll", lazyload);
+                window.removeEventListener("resize", lazyload);
+                window.removeEventListener("orientationChange", lazyload);
+              }
+            }, 20);
+          }
+        
+          document.addEventListener("scroll", lazyload);
+          window.addEventListener("resize", lazyload);
+          window.addEventListener("orientationChange", lazyload);
+        }
+      });
+
       /**
        * Allow smooth scrolling from hero to About section.
        *
@@ -405,7 +450,7 @@
         },
         false
       );
-
+      
       /** Do the same for the team link in the footer. TO DO: Refactor */
       document.querySelector("#team-link").addEventListener(
         "click",
@@ -418,9 +463,9 @@
         },
         false
       );
-
+      
       /** jQuery */
-
+      
       $(window).on("resize", function () {
         /* Show fixed nav only on wide displays. */
         if ($(window).width() >= 1024) {
@@ -439,5 +484,12 @@
         $(".navbar-collapse").collapse("hide");
       });
     </script>
+
+    /** To top button. */
+    <!-- Declare the caught my eye Scroll to Top button. -->
+    <button onclick="cme_scrollToTop(1200)" id="cme_toTopBut" title="Go to top">&#8593;</button>
+
+    <!-- Load the JavaScript. -->
+    <script src="https://cdn.jsdelivr.net/gh/marklchaves/cme-to-top-button@1.0.0/dist/cme-to-top-button.min.js"></script>
   </body>
 </html>

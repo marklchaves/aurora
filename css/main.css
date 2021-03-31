@@ -329,6 +329,13 @@ footer {
     padding: 1em;
 }
 
+/* Credits */
+
+#credits {
+    font-size: 0.75em;
+}
+
+/** Utilities */
 
 /* Force justify to the center. mlc */
 
