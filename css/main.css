@@ -1,10 +1,12 @@
 /** Mostly mobile first design. */
 
 :root {
-    --prim-accent-color: #F97300; /* Orange */
+    --prim-accent-color: #50667A; /* Metal grey */
+    --secon-accent-color: #242636; /* Dark purple */
+    --text-color: #342F2D; /* Dark grey */
     --prim-bg-color: #f4f4f4; /* Off white */
     --lite-bg-color: white;
-    --navbar-height: 50px;
+    --navbar-height: 70px;
 }
 
 /** 
@@ -48,6 +50,10 @@ a {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 300;
     letter-spacing: .1em;
+}
+
+.btn:hover {
+    opacity: 75%;
 }
 
 nav {
@@ -151,15 +157,9 @@ ul {
 }
 
 .description p {
-    color: #666;
+    color: var(--secon-accent-color);
     width: 75%;
     line-height: 1.5;
-}
-
-.description button {
-    border: 1px solid var(--prim-accent-color);
-    background: var(--prim-accent-color);
-    color: #fff;
 }
 
 .about {
@@ -182,21 +182,21 @@ ul {
 
 .about span {
     display: block;
-    color: #888;
+    color: var(--text-color);
 }
 
 .about .desc {
     padding: 2em;
-    border-left: 4px solid #10828C;
+    border-left: 4px solid var(--secon-accent-color);
 }
 
 .about .desc h3 {
-    color: #10828C;
+    color: var(--secon-accent-color);
 }
 
 .about .desc p {
     line-height: 2;
-    color: #888;
+    color: var(--text-color);
 }
 
 
@@ -238,7 +238,7 @@ ul {
 }
 
 .blog .card {
-    box-shadow: 0 0 20px #ccc;
+    box-shadow: 0 0 20px var(--lite-bg-color);
 }
 
 .blog .card img {
@@ -315,18 +315,19 @@ form {
 
 .contact-form .right .btn-secondary {
     background: var(--prim-accent-color);
-    color: #fff;
+    color: white;
     border: 0;
 }
 
 .contact-form .right .form-control::placeholder {
-    color: #888;
+    color: var(--text-color);
     font-size: 16px;
 }
 
 footer {
     background-color: var(--lite-bg-color);
-    padding: 1em;
+    /* Make space for to top button on mobile. */
+    padding: 1em 0.5em 5em 0.5em;
 }
 
 /* Credits */
@@ -374,6 +375,9 @@ footer {
     background-color: var(--lite-bg-color);
 }
 
+#portfolio img {
+    border-radius: 5px;
+}
 
 /** Media queries mlc */
 
@@ -402,6 +406,10 @@ footer {
     /* Increase contact form margins on wider screens. */
     .contact-form {
         margin: 6em 0;
+    }
+
+    footer {
+        padding: 1em 1em 2em 1em;
     }
 }
 

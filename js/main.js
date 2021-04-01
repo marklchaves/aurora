@@ -13,7 +13,7 @@
 $(document).ready(function () {
   $(".header").height($(window).height());
 
-  $(".navbar a").click(function () {
+  $("#myNavbar a").click(function () {
     let hdrOffset = 60;
     if ($(window).width() < 1024) hdrOffset = 200;
     $("body,html").animate(
