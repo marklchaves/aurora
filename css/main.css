@@ -129,7 +129,7 @@ ul {
 
 .header {
     position: relative;
-    background-image: url('../images/bali-nyuh-kuning-cafe-laptop-coffee-768w.jpg');
+    background-image: url('../images/bali-nyuh-kuning-cafe-laptop-coffee-768w.webp');
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -395,7 +395,7 @@ footer {
     /* Offset for a fixed navbar. */
     .header {
         margin-top: var(--navbar-height);
-        background-image: url('../images/bali-nyuh-kuning-cafe-laptop-coffee-1920w.jpg');
+        background-image: url('../images/bali-nyuh-kuning-cafe-laptop-coffee-1920w.webp');
     }
     /* Top offset for hero description text. */
     .description {
