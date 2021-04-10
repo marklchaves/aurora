@@ -1,6 +1,6 @@
-# Aurora
+# Template Aurora
 
-## A single page website for learning Bootstrap 4
+## A single page website template built on Bootstrap 4
 
 Template Aurora is a minimalist single page website built on Bootstrap 4. It's simple, responsive, and fast. 
 
@@ -18,7 +18,7 @@ The markup code is formatted and organised using HTML5 semantic tags. This means
 
 ---
 
-## Change Summary
+## Change summary
 
 ### Laundry list of fixes and enhancements
 
