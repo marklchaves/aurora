@@ -2,15 +2,28 @@
 
 ## A single page website for learning Bootstrap 4
 
+Template Aurora is a minimalist single page website built on Bootstrap 4. It's simple, responsive, and fast. 
+
 [![Netlify Status](https://api.netlify.com/api/v1/badges/9c58f724-923b-4de0-a110-6314af5ab5e9/deploy-status)](https://app.netlify.com/sites/determined-golick-341803/deploys)
 
 ---
 
-## Updated version
+## About
+
+Template Aurora is a single page static website designed to get you a clean and professional website in less time. With Aurora, you get a mobile-first designed website right out of the box. That's right—mobile design isn't an afterthought when it comes to Aurora!
+
+The template's clean aesthetic and responsive design makes heads turn and loads fast and on any device. The hero image uses responsive art directed images to improve your above-the-fold page speed and keep your hero looking great on mobile.
+
+The markup code is formatted and organised using HTML5 semantic tags. This means you save time and improve quality by knowing where to drop in your content. All the custom CSS lives in a central file and uses BEM notation (for you CSS3 geeks) to make adding your own styles a breeze. 
+
+---
+
+## Change Summary
 
 ### Laundry list of fixes and enhancements
 
 1. Fixed issues in the header and footer.
+1. Added CSS variables to support changing the template's colours.
 1. Added custom flexbox classes to center the contact and footer sections.
 1. Center justified the blog card **Read more**.
 1. Made the top nav fixed and added offset margin to the header to avoid unwanted cropping of the hero image.
@@ -26,22 +39,21 @@
 1. Adjusted top spacing for hero text on mobile.
 1. Used mobile first CSS.
 1. Started using [BEM for CSS](http://getbem.com/naming/).
+1. Added mobile-first art directed hero images for RWD.
+1. Migrated all images to WebP.
 
 ### Screengrabs
 
-![Demo video](images/aurora-demo-video.gif)
+![Demo video](images/aurora-demo-op.gif)
 
-![Responsive About section](images/aurora-mobile-about.png)
+![Responsive Hero section](images/aurora-hero-mob.webp)
 
-![Responive Footer section](images/aurora-mobile-footer.png)
+![Responsive Portfolio section](images/aurora-portfolio-mob.webp)
+
+![Responsive Team section landscape orientation](images/aurora-team-mob.webp)
 
 ---
 
-## Original version
+## Credits
 
-The original version is available in this [repo on GitHub](https://github.com/hayanisaid/bootstrap4-website).
-
-![preview](images/scroll-eff.gif)
-
-See the article [Learn Bootstrap 4 in 30 minutes by building a landing page website](https://www.freecodecamp.org/news/learn-bootstrap-4-in-30-minute-by-building-a-landing-page-website-guide-for-beginners-f64e03833f33/) on freedCodeCamp.
-
+Images by [caught my eye](https://www.caughtmyeye.cc/). Placeholder words by [Hipster Ipsum](https://hipsum.co/). Lazy load by [ImageKit.io](https://imagekit.io/).
