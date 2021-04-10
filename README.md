@@ -37,10 +37,11 @@ The markup code is formatted and organised using HTML5 semantic tags. This means
 1. Changed team to card layout.
 1. Added bottom margin on cards for mobile.
 1. Adjusted top spacing for hero text on mobile.
-1. Used mobile first CSS.
+1. Began using mobile first CSS.
 1. Started using [BEM for CSS](http://getbem.com/naming/).
 1. Added mobile-first art directed hero images for RWD.
 1. Migrated all images to WebP.
+1. Added cme dev To Top button.
 
 ### Screengrabs
 
