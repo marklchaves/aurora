@@ -225,34 +225,34 @@ ul {
 }
 
 
-/** Blog */
+/** Content */
 
-.blog {
+.content {
     margin: 4em 0;
     position: relative;
 }
 
-.blog h1 {
+.content h1 {
     color: var(--prim-accent-color);
     margin: 2em;
 }
 
-.blog .card {
+.content .card {
     box-shadow: 0 0 20px var(--lite-bg-color);
 }
 
-.blog .card img {
+.content .card img {
     width: 300px;
     height: auto;
     margin-left: 50%;
     transform: translate(-50%, 0%);
 }
 
-.blog .card-title {
+.content .card-title {
     color: var(--prim-accent-color);
 }
 
-.blog .card-body {
+.content .card-body {
     padding: 1em;
 }
 
