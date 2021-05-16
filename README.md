@@ -25,12 +25,12 @@ The markup code is formatted and organised using HTML5 semantic tags. This means
 1. Fixed issues in the header and footer.
 1. Added CSS variables to support changing the template's colours.
 1. Added custom flexbox classes to center the contact and footer sections.
-1. Center justified the blog card **Read more**.
+1. Center justified the content (formerly blog) card **Read more**.
 1. Made the top nav fixed and added offset margin to the header to avoid unwanted cropping of the hero image.
 1. Added alternating background colours to the sections to break up the monochrome look and feel.
 1. Added custom JavaScript to the hero CTA for smooth scrolling to the about section. The JavaScript also pushes the `#about` URL to the browser history and updates the address bar.
-1. Changed the portfolio, blog, and team sections to break into nx2 layouts instead of nx1 for mobile.
-1. Fixed the stretched out blog preview images.
+1. Changed the portfolio, content (formerly blog), and team sections to break into nx2 layouts instead of nx1 for mobile.
+1. Fixed the stretched out content (formerly blog) preview images.
 1. Fixed the team overlay to be flush on desktop and mobile.
 1. Fixed mobile menu not closing when clicked (jQuery).
 1. Removed overlay and animation for team section.
@@ -42,6 +42,7 @@ The markup code is formatted and organised using HTML5 semantic tags. This means
 1. Added mobile-first art directed hero images for RWD.
 1. Migrated all images to WebP.
 1. Added cme dev To Top button.
+1. Changed references to "blog" to "Content". The original template mentions a blog even though there wasn't any built-in support for a blog.
 
 ### Screengrabs
 
@@ -58,3 +59,11 @@ The markup code is formatted and organised using HTML5 semantic tags. This means
 ## Credits
 
 Images by [caught my eye](https://www.caughtmyeye.cc/). Placeholder words by [Hipster Ipsum](https://hipsum.co/). Lazy load by [ImageKit.io](https://imagekit.io/).
+
+---
+
+## I'll Drink to That ;-)
+
+Template Aurora is free to use. The template's images are subject to copyright.
+
+[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/D1D7YARD)
