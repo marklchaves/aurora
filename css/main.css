@@ -330,6 +330,12 @@ footer {
     padding: 1em 0.5em 5em 0.5em;
 }
 
+/* Socials */
+
+.social-inline {
+    display: inline-block;
+}
+
 /* Credits */
 
 #credits {
