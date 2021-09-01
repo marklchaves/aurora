@@ -486,38 +486,6 @@
       }
     });
 
-    /**
-     * Allow smooth scrolling from hero to About section.
-     *
-     * Here, we also preserve browser history.
-     *
-     * mlc
-     */
-    document.querySelector("#about-link").addEventListener(
-      "click",
-      (evt) => {
-        evt.preventDefault();
-        document.querySelector("#about").scrollIntoView({
-          behavior: "smooth",
-        });
-        history.pushState({}, "About", "#about"); // Update address bar.
-      },
-      false
-    );
-
-    /** Do the same for the team link in the footer. TO DO: Refactor */
-    document.querySelector("#team-link").addEventListener(
-      "click",
-      (evt) => {
-        evt.preventDefault();
-        document.querySelector("#team").scrollIntoView({
-          behavior: "smooth",
-        });
-        history.pushState({}, "Team", "#team"); // Update address bar.
-      },
-      false
-    );
-
     /** jQuery */
 
     $(window).on("resize", function () {
@@ -542,7 +510,7 @@
   <!-- Save for last. -->
 
   <!-- Declare the caught my eye Scroll to Top button. -->
-  <button onclick="cmeToTopButton.scrollToTop(1200)" id="cme_toTopBut" title="Go to top">&#8593;</button>
+  <button onclick="cmeToTopButton.scrollToTop(1000)" id="cme_toTopBut" title="Go to top">&#8593;</button>
 
   <!-- Load the Scroll to Top JavaScript. -->
   <script defer src="https://cdn.jsdelivr.net/gh/marklchaves/cme-to-top-button/src/cme-to-top-button.min.js"></script>
